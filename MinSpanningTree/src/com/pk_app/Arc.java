@@ -9,4 +9,11 @@ public class Arc {
     public String toString() {
         return startNode.id + " " + endNode.id+ " " + cost;
     }
+
+    public int compareTo(Arc a){
+        if( this.cost > a.cost) return 1;
+        if( this.cost < a.cost) return -1;
+        return 0;
+
+    }
 }
