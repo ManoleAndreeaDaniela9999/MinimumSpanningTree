@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Node {
     public String id;
-    public boolean wasVisited;
+    public boolean wasVisited = false;
 
     @Override
     public String toString() {

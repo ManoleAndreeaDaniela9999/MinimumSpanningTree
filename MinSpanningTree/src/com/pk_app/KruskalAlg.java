@@ -7,7 +7,7 @@ public class KruskalAlg {
 
     private Vector<Node> nodeList;
     private Vector<Arc> arcList;
-    UnionFind unionFind;
+    private UnionFind unionFind;
 
     public KruskalAlg(Vector<Node> nodeList, Vector<Arc> arcList) {
         this.nodeList = nodeList;
@@ -30,6 +30,10 @@ public class KruskalAlg {
             result.addElement(arc);
         }
 
+        for (Node n :
+                nodeList) {
+            n.wasVisited = false;
+        }
         return result;
     }
 

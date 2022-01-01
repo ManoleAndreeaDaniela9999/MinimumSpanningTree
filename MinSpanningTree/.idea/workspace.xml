@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4873486b-7899-4e6a-b9f7-77d9fcf3e1ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/pk_app/UnionFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pk_app/PrimAlg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pk_app/graph2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pk_app/graph2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/pk_app/KruskalAlg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pk_app/KruskalAlg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/pk_app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pk_app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pk_app/graph.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pk_app/graph.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/pk_app/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pk_app/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="233S6yGWzyc4mJsq4fazGjVD7V3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -126,5 +136,21 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/pk_app/PrimAlg.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/pk_app/PrimAlg.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
