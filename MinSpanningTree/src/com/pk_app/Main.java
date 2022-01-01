@@ -9,12 +9,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
         GraphUtils g = new GraphUtils("src/com/pk_app/graph.txt");
         //TODO: APPLY KRUSKAL
-        g.getArcList().sort(new Comparator<Arc>() {
-            @Override
-            public int compare(Arc o1, Arc o2) {
-                return o1.compareTo(o2);
-            }
-            );
+        KruskalAlg k = new KruskalAlg(g.getNodeList(),g.getArcList());
+
+        System.out.println(k.getArcList());
         //TODO: APPLY PRIM
     }
 }

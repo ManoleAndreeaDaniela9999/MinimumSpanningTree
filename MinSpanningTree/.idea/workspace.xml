@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4873486b-7899-4e6a-b9f7-77d9fcf3e1ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/pk_app/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/pk_app/graph.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/pk_app/KruskalAlg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pk_app/Arc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pk_app/Arc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/pk_app/GraphUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pk_app/GraphUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/pk_app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/pk_app/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,5 +123,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/pk_app/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
