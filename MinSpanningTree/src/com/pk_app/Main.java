@@ -11,7 +11,16 @@ public class Main {
         //TODO: APPLY KRUSKAL
         KruskalAlg k = new KruskalAlg(g.getNodeList(),g.getArcList());
 
-        System.out.println(k.getArcList());
+        System.out.println("The list: ");
+        for (Arc a:
+                k.getArcList()) {
+            System.out.println(a);
+
+        }
+        System.out.println("Kruskal result:");
+        System.out.println(k.solve());
         //TODO: APPLY PRIM
+
+        
     }
 }
