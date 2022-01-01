@@ -1,7 +1,6 @@
 package com.pk_app;
 
 import java.io.IOException;
-import java.util.Comparator;
 import java.util.Vector;
 
 public class Main {
@@ -18,12 +17,18 @@ public class Main {
 
         }
         System.out.println("Kruskal result:");
-        System.out.println(k.solve());
+        System.out.println(k.solve() + " cost: " + k.cost());
         //TODO: APPLY PRIM
         GraphUtils g2 = new GraphUtils("src/com/pk_app/graph2.txt");
         PrimAlg p = new PrimAlg(g2.getNodeList(), g2.getArcList());
+        System.out.println("The list: ");
+        for (Arc a:
+                p.getArcList()) {
+            System.out.println(a);
+        }
         Vector<Arc> r = p.solve();
-        if(r != null) System.out.println(r);
+        System.out.println("Prim's result");
+        if(r != null) System.out.println(r + " cost: " + p.getCost());
         else System.out.println("no MST");
     }
 }

@@ -1,5 +1,6 @@
 package com.pk_app;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 import java.util.Vector;
@@ -19,7 +20,7 @@ public class PrimAlg {
         this.arcList = new Vector<>();
         this.arcList.addAll(arcList);
 
-        pq = new PriorityQueue<>( (o1, o2) -> Integer.compare(o1.cost, o2.cost));
+        pq = new PriorityQueue<>((o1, o2) -> o1.compareTo(o2));
         Vector<Arc> reverseEdges = new Vector<>();
         for (Arc arc :
                 arcList) {
@@ -36,17 +37,23 @@ public class PrimAlg {
     public Vector<Arc> solve() {
         int expectedNrOfEdges = nodeList.size() - 1;
         int edgeCount = 0;
-        addEdges(nodeList.elementAt(0));
+        addEdges(nodeList.elementAt(nodeList.size()-1));
         Vector<Arc> result = new Vector<>();
         while (!pq.isEmpty() && edgeCount != expectedNrOfEdges) {
             Arc edge = pq.poll();
-            if (edge.endNode.wasVisited) continue;
+            if (edge.endNode.wasVisited)
+                continue;
 
             edgeCount += 1;
             result.add(edge);
             cost += edge.cost;
 
             addEdges(edge.endNode);
+        }
+
+        for (Node n :
+                nodeList) {
+            n.wasVisited = false;
         }
 
         if (edgeCount != expectedNrOfEdges) {
@@ -60,7 +67,7 @@ public class PrimAlg {
         n.wasVisited = true;
         for (Arc arc :
                 arcList) {
-            if (!arc.endNode.wasVisited && arc.startNode == n)
+            if (!arc.endNode.wasVisited && arc.startNode.id.equals(n.id))
                 pq.add(arc);
         }
     }
